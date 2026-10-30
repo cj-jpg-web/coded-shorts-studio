@@ -1,0 +1,32 @@
+{
+  "name": "coded-shorts-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview-frames": "node scripts/render.mjs --preview",
+    "render": "node scripts/render.mjs && node scripts/mux.mjs",
+    "postinstall": "node scripts/prepare-renderer.mjs"
+  },
+  "dependencies": {
+    "@react-three/drei": "10.7.6",
+    "@react-three/fiber": "9.4.0",
+    "@remotion/player": "4.0.407",
+    "@remotion/three": "4.0.407",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.407",
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "@sparticuz/chromium": "^153.0.0",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "@types/three": "0.180.0",
+    "playwright": "^1.62.1",
+    "typescript": "5.9.3",
+    "vite": "7.2.2"
+  }
+}

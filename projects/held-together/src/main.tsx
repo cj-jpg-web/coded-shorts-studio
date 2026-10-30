@@ -1,0 +1,5 @@
+import React,{useRef,useEffect} from 'react';import {createRoot} from 'react-dom/client';import {Player,PlayerRef} from '@remotion/player';import {HeldTogether} from './projects/HeldTogether';import {WIDTH,HEIGHT,FPS,DURATION} from './core/timeline';
+const capture=new URLSearchParams(location.search).has('capture');
+function App(){const ref=useRef<PlayerRef>(null);useEffect(()=>{window.seekFrame=async(f:number)=>{ref.current!.seekTo(f);await new Promise<void>((resolve,reject)=>{let tries=0;const check=()=>{if(window.__sceneFrame===f){resolve()}else if(tries++<300)requestAnimationFrame(check);else reject(new Error('Frame did not settle'))};check()})};window.storyReady=true},[]);return <Player ref={ref} component={HeldTogether} durationInFrames={FPS*DURATION} compositionWidth={WIDTH} compositionHeight={HEIGHT} fps={FPS} controls={!capture} autoPlay={!capture} loop style={{width:capture?WIDTH:'min(100vw,56.25vh)',height:capture?HEIGHT:'100vh'}}/>}
+createRoot(document.getElementById('root')!).render(<App/>);
+declare global{interface Window{seekFrame:(f:number)=>Promise<void>;storyReady:boolean}}

@@ -1,0 +1,34 @@
+import {useMemo,useEffect} from 'react';import * as T from 'three';import {RoundedBox} from '@react-three/drei';import {skinMaps} from './materials';import {ramp,state} from '../core/timeline';
+export const radius=(y:number)=>.45+.23*Math.exp(-(((y-.7)/1.8)**2))+.07*Math.exp(-(((y-2.7)/.7)**2));
+const wound=(y:number)=>Math.pow(Math.max(0,1-(y/1.24)**2),.7);
+function skinGeo(side:number,closure:number,cutaway:number){const p:number[]=[],uv:number[]=[],idx:number[]=[];const N=100,M=40;for(let j=0;j<=N;j++){const y=-2.7+j/N*5.6;const w=wound(y);const gap=(.24*(1-closure)+.012)*w;const window=cutaway*.85*Math.pow(Math.max(0,1-(y/.72)**8),.4);const a=Math.max(gap,window);for(let k=0;k<=M;k++){const theta=side*(a+(Math.PI-a)*k/M),r=radius(y);p.push(Math.sin(theta)*r,y,Math.cos(theta)*r);uv.push((theta+Math.PI)/(2*Math.PI),j/N)}}for(let j=0;j<N;j++)for(let k=0;k<M;k++){const a=j*(M+1)+k,b=a+M+1;if(side>0)idx.push(a,b,a+1,b,b+1,a+1);else idx.push(a,a+1,b,b,a+1,b+1)}const g=new T.BufferGeometry();g.setAttribute('position',new T.Float32BufferAttribute(p,3));g.setAttribute('uv',new T.Float32BufferAttribute(uv,2));g.setIndex(idx);g.computeVertexNormals();return g}
+function tube(points:T.Vector3[],r:number,closed=false){return new T.TubeGeometry(new T.CatmullRomCurve3(points,closed,'catmullrom',.3),64,r,8,closed)}
+function Thread({y,index,t,closure,removal}:{y:number,index:number,t:number,closure:number,removal:number}){const appear=ramp(t,2.7+index*.63,3.7+index*.63);const g=useMemo(()=>{const spread=.24*(1-closure)+.16;const z=radius(y),edge=Math.sqrt(z*z-spread*spread);return tube([new T.Vector3(-spread,y,edge-.015),new T.Vector3(-spread*.9,y-.025,edge+.016),new T.Vector3(0,y-.04,z+.025),new T.Vector3(spread*.9,y,edge+.016),new T.Vector3(spread,y+.015,edge-.015),new T.Vector3(0,y+.025,z-.17),new T.Vector3(-spread,y,edge-.015)],.012)},[closure,y]);useEffect(()=>()=>g.dispose(),[g]);const count=Math.floor(g.index!.count*appear/3)*3;g.setDrawRange(0,count);return <group visible={appear>0&&removal<1} position={[removal*(index%2?1:-1)*1.3,0,removal*.8]} scale={1-removal*.55}><mesh geometry={g} castShadow><meshStandardMaterial color="#d8f1e9" roughness={.43} metalness={.05}/></mesh><mesh visible={appear>.96} position={[.16+.24*(1-closure),y, Math.sqrt(radius(y)**2-(.16+.24*(1-closure))**2)+.012]} scale={[.027,.021,.021]}><sphereGeometry args={[1,10,8]}/><meshStandardMaterial color="#b6d9d0"/></mesh></group>}
+export function Anatomy({t}:{t:number}){const s=state(t);const maps=useMemo(skinMaps,[]);const skin=useMemo(()=>new T.MeshStandardMaterial({map:maps.color,bumpMap:maps.bump,bumpScale:.012,roughness:.63,side:T.DoubleSide}),[maps]);const geo=useMemo(()=>[skinGeo(-1,s.closure,s.cutaway),skinGeo(1,s.closure,s.cutaway)],[s.closure,s.cutaway]);useEffect(()=>()=>geo.forEach(g=>g.dispose()),[geo]);const bed=useMemo(()=>{const p:number[]=[],idx:number[]=[];for(let j=0;j<=80;j++){const y=-1.24+j/80*2.48,w=wound(y),a=(.24*(1-s.closure)+.012)*w;for(let k=0;k<=10;k++){const u=k/10;p.push((u*2-1)*Math.sin(a)*radius(y),y,Math.cos(a)*radius(y)-.008-.14*Math.sin(u*Math.PI)*w*(1-s.healing*.85))}}for(let j=0;j<80;j++)for(let k=0;k<10;k++){const a=j*11+k;idx.push(a,a+1,a+11,a+1,a+12,a+11)}const g=new T.BufferGeometry();g.setAttribute('position',new T.Float32BufferAttribute(p,3));g.setIndex(idx);g.computeVertexNormals();return g},[s.closure,s.healing]);useEffect(()=>()=>bed.dispose(),[bed]);
+return <group>
+{geo.map((g,i)=><mesh key={i} geometry={g} material={skin} castShadow receiveShadow/>)}
+{/* Dark rose wound bed stays recessed; no floating surface decal. */}
+<mesh geometry={bed}><meshStandardMaterial color={s.healing>.8?'#ad7260':'#813d3c'} roughness={.85} side={T.DoubleSide} transparent opacity={1-s.cutaway}/></mesh>
+{/* Subtle raised wound margins track closure. */}
+{[-1,1].map(side=><Margin key={side} side={side} closure={s.closure} cutaway={s.cutaway} healing={s.healing}/>)}
+{Array.from({length:7},(_,i)=><Thread key={i} index={i} y={.94-i*.31} t={t} closure={s.closure} removal={s.removal}/>)}
+<group visible={s.cutaway>.01}><mesh position={[0,0,.02]}><cylinderGeometry args={[.54,.54,1.3,28]}/><meshStandardMaterial color="#b7826c" roughness={.95}/></mesh>
+{/* A spatial cutaway, with dermis and fat occupying the same arm. */}
+{[-1,1].map(side=><group key={side} position={[side*.265,0,.37]}>
+<mesh position={[side*.07,0,.13]} scale={[.20,.57,.10]}><sphereGeometry args={[1,18,24]}/><meshStandardMaterial color="#c78475" bumpMap={maps.bump} bumpScale={.018} roughness={.83}/></mesh>
+<mesh position={[0,0,-.01]} scale={[.25,.58,.1]}><sphereGeometry args={[1,16,20]}/><meshStandardMaterial color="#d6ae66" roughness={.85}/></mesh>
+{Array.from({length:24},(_,i)=><mesh key={i} position={[(i%4-1.5)*.115,Math.floor(i/4)*.19-.48,.075]} scale={[.075,.11,.065]}><icosahedronGeometry args={[1,1]}/><meshStandardMaterial color={i%3?'#dfb86c':'#edca87'} roughness={.8}/></mesh>)}
+</group>)}
+{Array.from({length:22},(_,i)=><Fiber key={i} i={i} growth={s.healing}/>)}
+</group>
+{/* Sleeve, wrist and a softly faceted hand preserve anatomical context. */}
+<mesh position={[0,3.0,-.015]} castShadow><cylinderGeometry args={[.84,.77,1.15,14]}/><meshStandardMaterial color="#507e91" roughness={.95}/></mesh>
+<mesh position={[0,2.45,0]}><torusGeometry args={[.75,.035,8,28]}/><meshStandardMaterial color="#365d72"/></mesh>
+<group position={[0,-3.12,-.04]} rotation={[0,0,.06]}>
+<RoundedBox args={[.85,.95,.35]} radius={.15} smoothness={2} material={skin} castShadow/>
+{[0,1,2,3].map(i=><mesh key={i} position={[(i-1.5)*.205,-.64+(i===3?.12:0),.015]} rotation={[.1,0,(i-1.5)*.035]} material={skin} castShadow><capsuleGeometry args={[.092,.52-(i===3?.13:0),3,8]}/></mesh>)}
+<mesh position={[-.5,-.05,.04]} rotation={[.15,0,-.5]} material={skin}><capsuleGeometry args={[.13,.47,3,8]}/></mesh>
+</group>
+</group>}
+function Margin({side,closure,cutaway,healing}:{side:number,closure:number,cutaway:number,healing:number}){const g=useMemo(()=>tube(Array.from({length:48},(_,i)=>{const y=-1.22+i/47*2.44;const w=wound(y);const a=Math.max((.24*(1-closure)+.012)*w,cutaway*.85*Math.pow(Math.max(0,1-(y/.72)**8),.4));return new T.Vector3(side*Math.sin(a)*radius(y),y,Math.cos(a)*radius(y)-.005)}),.018*(1-healing*.35)),[side,closure,cutaway,healing]);useEffect(()=>()=>g.dispose(),[g]);return <mesh geometry={g}><meshStandardMaterial color={healing>.7?'#b57e6a':'#b26860'} roughness={.7}/></mesh>}
+function Fiber({i,growth}:{i:number,growth:number}){const g=useMemo(()=>tube([new T.Vector3(-.17,-.49+i*.046,.56+(i%3)*.013),new T.Vector3(0,-.49+i*.046+Math.sin(i*3.1)*.035,.59),new T.Vector3(.17,-.49+i*.046+Math.cos(i*2.3)*.065,.56)],.006),[i]);return <mesh geometry={g} scale={[Math.max(.001,ramp(growth, i*.018,.35+i*.018)),1,1]} visible={growth>i*.018}><meshStandardMaterial color={i%2?'#f4d4b9':'#e5c2a6'} roughness={.64}/></mesh>}

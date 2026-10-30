@@ -1,0 +1,8 @@
+**/node_modules/
+**/dist/
+**/*.log
+**/*_silent.mp4
+**/__pycache__/
+.DS_Store
+.env
+.env.*

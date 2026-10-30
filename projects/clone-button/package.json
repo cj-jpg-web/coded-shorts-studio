@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@sparticuz/chromium": "^153.0.0",
+    "three": "^0.187.0"
+  },
+  "name": "clone-button-short",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "preview": "node serve.mjs",
+    "render": "node render.mjs"
+  }
+}
