@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 600 1066.667" role="img" aria-label="Close illustration of an expressive outer ear and an approaching instrument">
+<defs>
+<clipPath id="ear"><path d="M-74-72C37-116 245-87 335 19C400 95 413 209 394 312C382 390 337 452 310 506C292 543 298 585 281 619C269 646 249 656 249 696C249 743 245 801 209 835C170 871 108 856 85 819C60 778 69 737 61 701C53 668 31 651 22 609C6 554 26 518 13 469C-10 385-20 271-10 182C-10 123-25 54-74 33Z"/></clipPath>
+<clipPath id="eyeLids"><path d="M162 237C158 207 178 187 200 191C225 194 230 221 226 242C219 272 167 271 162 237Z M233 234C228 205 249 187 270 193C292 198 297 225 289 245C279 271 238 267 233 234Z"/></clipPath><style>.edge{stroke:#3f3030;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}.crease{fill:none;stroke:#a7856a;stroke-width:1.35;stroke-linecap:round}.fine{fill:none;stroke:#bf9b7c;stroke-width:1.05;stroke-linecap:round}</style>
+</defs>
+<rect width="600" height="1067" fill="#b9d9ee"/>
+<!-- Original, asymmetric pinna silhouette, naturally cropped by the close camera. -->
+<path class="edge" fill="#fff0d2" d="M-74-72C37-116 245-87 335 19C400 95 413 209 394 312C382 390 337 452 310 506C292 543 298 585 281 619C269 646 249 656 249 696C249 743 245 801 209 835C170 871 108 856 85 819C60 778 69 737 61 701C53 668 31 651 22 609C6 554 26 518 13 469C-10 385-20 271-10 182C-10 123-25 54-74 33Z"/>
+<g clip-path="url(#ear)">
+<!-- Shading follows individual folds. No uniform concentric bands or outlined shadows. -->
+<path fill="#ecd3af" d="M284-1C372 74 394 196 367 304C350 376 313 427 284 485Q263 531 271 567C275 609 250 623 233 657C215 699 231 745 204 785Q179 826 138 817C177 855 217 821 233 781Q251 733 243 688Q245 651 269 622C300 590 284 552 302 515C326 458 364 410 385 336C425 196 386 48 305-8Z"/>
+<path fill="#f7e2bd" d="M14 22C105-25 225-5 286 66C328 117 336 178 325 225Q315 175 301 137C269 60 174 17 100 35Q51 43 17 73Z"/>
+<path fill="#e4c6a0" d="M110 127C170 91 237 113 261 161C280 196 273 242 256 272C246 292 226 307 223 331Q220 354 237 372C266 405 248 453 219 483Q198 508 169 515Q203 482 216 454Q238 417 218 392C196 365 191 339 206 309C232 269 251 246 251 211C252 167 213 130 172 134Q135 134 110 150Z"/>
+<path fill="#f1dbb6" d="M117 167C81 207 76 263 94 315Q106 347 128 373C158 407 145 443 125 465Q94 497 106 535C115 565 142 566 161 555Q133 584 109 565C78 541 84 499 103 466Q130 424 107 389C72 347 56 288 66 237Q77 188 117 167Z"/>
+<path fill="#fff7df" d="M38 80C79 43 151 33 204 54Q248 71 266 104C207 58 128 64 75 94Q46 111 38 131Z"/>
+<path fill="#fff6dd" d="M329 123Q358 186 345 254Q338 279 330 285Q347 209 325 157Z"/>
+<path fill="#e9cda8" d="M80 683Q91 722 84 753C76 787 94 817 123 825Q100 810 101 777Q111 727 91 687Z"/>
+</g>
+<!-- Helix, antihelix fork, scapha and lobule contours are distinct and asymmetrical. -->
+<path class="crease" d="M22 79C79 19 191 14 268 72C326 115 346 185 332 253Q320 315 282 358"/>
+<path class="fine" d="M31 91Q91 45 151 51M293 95Q323 135 327 175"/>
+<path class="crease" d="M114 135C75 178 61 246 77 307Q87 352 115 388C138 419 139 447 118 473C87 512 98 553 128 556Q148 558 160 543"/>
+<path class="crease" d="M139 151Q201 128 236 175C259 210 245 257 220 290Q189 328 204 361"/>
+<path class="fine" d="M222 290Q259 289 278 270M202 312Q172 296 146 302M217 393Q237 420 214 450"/>
+<!-- Conchal bowl and canal opening: recessed, not a flat badge or concentric oval. -->
+<path class="edge" fill="#efd4b0" d="M145 453C183 420 224 431 246 466Q264 499 246 536C234 564 206 582 185 592Q164 610 169 631C146 635 132 620 133 598Q136 571 117 554C98 537 105 507 125 490Q140 478 145 453Z"/>
+<path fill="#d6ad8f" d="M180 454Q218 445 237 478C255 509 233 550 206 563Q175 574 165 601Q156 572 178 550C210 528 219 506 207 487Q193 470 170 480Z"/>
+<path class="edge" fill="#a96e69" d="M158 510C180 488 209 491 222 512Q234 535 213 553C198 565 179 568 165 582Q141 570 139 551Q137 530 158 510Z"/>
+<path fill="#754b50" d="M172 523Q192 505 207 520Q226 538 204 549Q185 556 169 566Q151 550 159 537Z"/>
+<path fill="#c78d7e" d="M146 517Q158 498 175 500Q157 518 157 536Q144 551 146 562Q132 545 146 517Z"/>
+<!-- Tragus occludes the front of the canal and attaches to the concha. -->
+<path class="edge" fill="#fff0d1" d="M120 507Q143 492 157 513C167 529 163 551 146 561Q129 570 116 554Q103 533 120 507Z"/>
+<path fill="#eed2aa" d="M145 510Q166 526 152 550Q143 560 131 557Q148 541 145 510Z"/>
+<path class="fine" d="M118 520Q129 509 139 520M163 594Q177 611 195 598M99 645Q112 662 106 684M209 708Q221 742 205 769"/>
+<!-- Tired, apprehensive expression: different lid heights and an uneven grimace. -->
+<g>
+<path class="edge" fill="#fffdf1" d="M162 237C158 207 178 187 200 191C225 194 230 221 226 242C219 272 167 271 162 237Z"/>
+<path class="edge" fill="#fffdf1" d="M233 234C228 205 249 187 270 193C292 198 297 225 289 245C279 271 238 267 233 234Z"/>
+<g clip-path="url(#eyeLids)"><path fill="#f1d9b6" d="M158 191L230 189L230 223Q196 217 158 222Z M230 187L298 193L298 222Q262 213 230 220Z"/>
+</g><path class="edge" fill="none" d="M162 237C158 207 178 187 200 191C225 194 230 221 226 242C219 272 167 271 162 237Z M233 234C228 205 249 187 270 193C292 198 297 225 289 245C279 271 238 267 233 234Z"/><path class="edge" fill="none" d="M164 222Q194 216 226 223M234 220Q264 215 291 223"/>
+<ellipse cx="202" cy="245" rx="8" ry="10" fill="#171c1b"/><ellipse cx="271" cy="243" rx="8" ry="10" fill="#171c1b"/>
+<circle cx="204" cy="242" r="2.2" fill="#fffdf1"/><circle cx="273" cy="240" r="2.2" fill="#fffdf1"/>
+<path class="edge" fill="none" d="M164 177Q187 164 211 175M237 172Q261 155 288 174"/>
+<path class="fine" d="M171 277Q190 283 208 277M246 276Q264 282 278 274M153 246l-5 11M301 244l5 10"/>
+<path class="edge" fill="#a46668" d="M214 300Q233 294 251 300L249 314Q231 310 214 315Z"/>
+<path fill="#fff9e8" d="M217 301Q232 297 248 302L247 307Q231 305 217 309Z"/>
+<path class="fine" d="M224 326q13 6 23-1"/>
+</g>
+<!-- An instrument approaches the visible entrance; it is not shown treating it. -->
+<g>
+<path class="edge" fill="#b7c4c7" d="M630 660L213 548L191 536L190 543L208 559L630 687Z"/>
+<path fill="#eaf1e9" d="M630 664L215 553L205 550L217 560L630 674Z"/>
+<path class="edge" fill="#a6b8c0" d="M630 702L218 563L192 545L190 551L209 574L630 726Z"/>
+<path fill="#dce7e4" d="M630 706L218 568L210 564L220 575L630 716Z"/>
+<path class="fine" d="M432 608l-3 12M442 611l-3 12M452 614l-3 12M462 617l-3 12"/>
+</g>
+<g transform="translate(370 897)"><rect width="177" height="43" rx="4" fill="#fffef8" stroke="#403337" stroke-width="1.5"/><text x="88.5" y="29" font-family="Nimbus Sans Narrow, sans-serif" font-size="27" font-weight="bold" text-anchor="middle" fill="#1e2222">Outer ear</text></g>
+</svg>
