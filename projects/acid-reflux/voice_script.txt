@@ -1,0 +1,11 @@
+UPSTAIRS — acid reflux voice guide only
+
+01 [0.15s] STOMACH: Hey! Wrong exit!
+02 [1.40s] ACID: Relax. Just heading upstairs.
+03 [3.55s] ESOPHAGUS: UPSTAIRS? I'm not built for this!
+04 [5.64s] VALVE: I relaxed at the wrong time.
+05 [7.69s] STOMACH: You're supposed to keep my contents down here!
+06 [10.22s] ACID: So... open floor plan?
+07 [11.89s] ESOPHAGUS: That's my lining! It burns!
+08 [13.59s] STOMACH: Stomach contents flowing back up. That's acid reflux.
+09 [17.03s] ESOPHAGUS: Great. A name. Still burning.
