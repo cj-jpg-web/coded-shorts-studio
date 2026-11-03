@@ -58,3 +58,14 @@ These are next-work priorities, not completed improvements. Reorder with reasons
 - Next experiment: improve silhouette/material recognition and quick exchanges in the same causal scene; check phone-size identification, silent causality, and actual motion against baseline.
 
 Append E001 onward only after actual work. Mark pending user review as pending.
+
+### E001 — Wrong Way (2026-11-03; user review pending)
+
+- New complete 21.23-second coded ear/cotton-swab reel. Source and full review: [project](../../../projects/wrong-way/README.md), [experiment](../../../projects/wrong-way/EXPERIMENT.md). These links resolve in the GitHub repository; installed copies can use https://github.com/cj-jpg-web/coded-shorts-studio/tree/main/projects/wrong-way .
+- Changes: cotton-tip/shaft silhouette, outer-ear framing, canal/pressure/eardrum/packed-wax views, anchored anatomical labels, phoneme mouths, distinct poses, hands, gaze, and quick exchanges. The wax remains packed after withdrawal.
+- Actual self-review caught a rectangular terminal wall seam in a close crop; replaced it with a rounded shared boundary before full rendering. This supports checking final camera crops, not just overview drawings.
+- Technical checks: both final MP4s fully decode without reported errors; 1080 × 1920, 30 fps, H.264, faststart atoms and seeking verified. Guide export has AAC audio; clean export preserves labels and omits dialogue guide/audio. All eleven scheduled response gaps measure 0.100 s; perceived pacing is not established by this measurement.
+- Medical source checked: ENT Health earwax-prevention FAQ and cerumen-impaction page, 2026-11-03. The animation is a simplified cartoon and does not demonstrate removal treatment.
+- Deliverables: [voice-guide video](https://chatgpt.com/library?file_id=libfile_34dda4810a4081919876725a0a468b7e&account_id=personal), [silent clean video](https://chatgpt.com/library?file_id=libfile_e5c3d69e6480819182d91f72e76cd8e7&account_id=personal), [voice script](https://chatgpt.com/library?file_id=libfile_42dbeaf8d2e48191a71d3ec947564999&account_id=personal).
+- Limits: creator frame/timeline review only; no independent full audiovisual review, unprimed recognition test, or retention evidence. Synthetic scratch voices still need replacement. Current accepted baseline remains Just a Tiny Squeeze until the user reviews this output.
+- Next: collect user feedback on actual motion, recognition, palette, and payoff; do not assign a new similarity percentage or mark prior art/performance gaps solved.
