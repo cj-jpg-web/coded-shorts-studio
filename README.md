@@ -2,6 +2,10 @@
 
 Our private workspace for code-built animated shorts, reusable 3D scenes, cameras, materials, and video outputs.
 
+## Portable anatomy-animation skill
+
+[Start here: use the production skill with any AI](ANATOMY_SKILL.md). The [skill](skills/direct-anatomy-animation/SKILL.md) captures art direction, acting/timing, reference observations, review gates, and the [learning ledger](skills/direct-anatomy-animation/references/learning-ledger.md). Read the latest revision before work and record reviewed experiments afterward. Private-repository access or a local copy is required.
+
 ## Projects
 
 | Project | Source | Video |
