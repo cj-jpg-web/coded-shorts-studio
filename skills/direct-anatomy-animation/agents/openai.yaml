@@ -1,0 +1,4 @@
+interface:
+  display_name: "Anatomy Animation Director"
+  short_description: "Direct coded anatomy reels and retain tested lessons"
+  default_prompt: "Use $direct-anatomy-animation to plan and evaluate a coded talking-organ reel using our accumulated production lessons."
