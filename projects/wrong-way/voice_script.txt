@@ -1,0 +1,14 @@
+WRONG WAY — voice guide only
+
+01 [0.15s] EAR: Hold it! You're going the wrong way!
+02 [2.12s] SWAB: Relax. I'm the cleaning crew.
+03 [3.91s] WAX: Then why am I moving IN?
+04 [5.37s] EAR: You're pushing the wax deeper!
+05 [7.00s] SWAB: Okay. Little more pressure?
+06 [8.62s] DRUM: NO! I live back here!
+07 [10.26s] WAX: Great. Now I'm a traffic jam.
+08 [12.23s] SWAB: But look! I got a tiny bit.
+09 [14.19s] EAR: And packed the rest inside.
+10 [15.80s] DRUM: Stay outside the ear canal.
+11 [17.51s] SWAB: Less tunnel. More towel?
+12 [19.23s] EAR: Now you're listening.
