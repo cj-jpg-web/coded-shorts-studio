@@ -1,0 +1,13 @@
+{
+  "name": "upstairs-acid-reflux-reel",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "audio": "python3 audio.py",
+    "render": "node render.cjs",
+    "clean": "node render.cjs --clean --mute"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "0.1.100"
+  }
+}
