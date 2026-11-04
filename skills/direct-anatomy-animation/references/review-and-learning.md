@@ -8,6 +8,9 @@ Classify records as **user requirement**, **direct observation**, **technical ch
 
 | Gate | Inspect | Record |
 |---|---|---|
+| Readiness | Current instructions, actual tools/assets, missing mechanisms | Small proof or explicit unresolved gap |
+| Asset contract | Declared moving parts versus generated contents | Reject baked moving parts; record replacement/backplate needs |
+| Contact/containment | Grip anchors, forbidden overlaps, mask scope, extreme and intermediate poses | Diagnostic unmasked views; actual geometry checks, not only plan lint |
 | Recognition | Unlabeled phone-size silhouettes/context | Actual reviewer identification or self-review limitation |
 | Attention | First focal point, contact scale, background competition | Frames and specific focal conflicts |
 | Drawing | Contours, thickness, occlusion, landmarks | Extreme poses and joint/contact crops |
@@ -32,3 +35,7 @@ Do not give a single quality percentage without criteria/evidence. Keep the user
 8. Save authorized repository changes; verify revision. Hand off outputs, checks, unresolved issues, and next experiment. Mark unapplied patches unsaved.
 
 Keep a full experiment record beside project source and a concise reusable summary in this skill's ledger. Use repository-relative paths or durable locators. Do not leave the only record in a conversation or temporary runtime. Do not include private clips or credentials.
+
+## Failure scope and iteration cost
+
+A plan can be sound while a generated asset violates it. Reopen the asset gate after each generation, substitution, source change or unexpected trace result. Fix the responsible layer and recheck affected contact intervals/crops. Keep prior successes and avoid unrelated redraws. Publish actual stage previews without repeated approval stops. Track setup, generation, rework, render and validation time separately. Automation checks declarations and measurable geometry; creator review still judges readability, performance and humor.
