@@ -23,3 +23,10 @@ Copy into the production project's experiment records. Fill only known informati
 - Lessons to promote; hypotheses retained; superseded rules/reason:
 - Remaining gaps and next experiment:
 - Saved repository revision or unsaved patch status:
+
+- Readiness verdict and unproven mechanism test:
+- Per-scene asset/layer manifest and generated-asset conformance:
+- Pose exposures/transitions, pivots, contact/grip anchors and clip ownership:
+- Intended contacts versus forbidden penetration; containment/mask diagnostic:
+- Actual milestone previews shown and user steering applied:
+- Reusable module/asset versions and stage time/rework causes:
