@@ -22,3 +22,7 @@ The subject/contact zone usually fills much of the frame. Walls, cavities, skin,
 | Sleep after eating | 60.3 s | Stomach to 12.87 s, brain to 25.3 s, stomach/added character/gas/color to 54.43 s, human ending |
 
 Use these as visual evidence, not mandatory formulas. Do not force constant cuts, human-doctor endings, or all reference colors into every reel. Verify medical mechanisms independently. Do not redistribute reference clips or copy branding.
+
+## 2026-11-04 motion reinspection
+
+A fresh sampled motion study and primary documentation are recorded in [motion-research.md](motion-research.md). Follow its evidence limits. Rapid pose changes and independent contents/tools are supported observations; the creator's exact masks, software and source rig remain unknown.
