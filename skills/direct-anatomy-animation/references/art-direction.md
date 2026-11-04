@@ -23,3 +23,9 @@ Avoid undifferentiated peach/beige/pink fields. Give focal tissue, background ti
 Give characters identity through eyelid weight, eye spacing, brow shape, jaw/mouth silhouettes, posture, and temperament. Maintain a coherent visual family without stamping one face onto every organ.
 
 Inspect setup, contact extreme, cutaway, reaction, and payoff frames before full rendering. Keep a baseline comparison board when available. A polished board does not prove temporal continuity or motion quality.
+
+## Accepted color direction and asset separation
+
+User feedback on Small Gathering (2026-11-04): prefers our brighter cyan/coral/peach/pink palette over the compared reference frame. Retain that color direction and black coherent outlines; improve composition and acting without reverting to dull yellowish fills. Keep shadows restrained, curved and subordinate to the main silhouette. This is a component preference, not acceptance of the complete reel.
+
+Generate action-ready assets from the layer plan: clean anatomy plate, independent contents/props, registered limb/face replacements, foreground occluders and revealed background. A complete composition is a guide, not automatically a rig. Audit semantic separation and compare original art to trace before animation. Preserve style, line weight, scale and pivots across replacement poses; do not repair a missing pose by stretching the whole character.
