@@ -1,4 +1,4 @@
 interface:
   display_name: "Anatomy Animation Director"
-  short_description: "Direct coded anatomy reels and retain tested lessons"
-  default_prompt: "Use $direct-anatomy-animation to plan and evaluate a coded talking-organ reel using our accumulated production lessons."
+  short_description: "Direct layered anatomy comedies with audited motion"
+  default_prompt: "Use $direct-anatomy-animation to plan a funny talking-organ reel, audit its layers and contact motion, show previews, and finish with a direct-to-viewer fact-check."
