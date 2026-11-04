@@ -33,10 +33,14 @@ Distinguish camera motion from entrance, flow, acting, and transformation. Refer
 | Voice/overlays | Timestamped dialogue, separate audio and label/guide tracks | Clean and guide versions differ only in requested layers |
 | Reproducibility | Explicit dependencies, commands, FFmpeg export/validation | Repeatable render and valid final file |
 
-Combine tools when necessary. For this project default to code-native artwork; ask before substituting generated raster/video for a code-only requirement. Use 3D only when it serves the agreed look; an existing 3D engine does not define 2D art direction.
+Combine tools when necessary. For this project the user has authorized image-first artwork followed by separated cutouts or actual tracing and coded animation. Use generated source artwork deliberately; keep motion parts separable. Honor any later explicit code-only requirement. Use 3D only when it serves the agreed look; an existing 3D engine does not define 2D art direction.
 
 ## Delivery
 
 Keep source snapshot, dependencies/setup, shot/beat data, clean voice script, and render commands. Replace absolute runtime-specific dependency paths with configuration or normal package resolution. Exclude temporary frames, dependencies, credentials, and third-party reference binaries from commits.
 
 Check the final assembled MP4: full FFmpeg decode, dimensions, frame rate, duration, audio/sync, transitions, seeking, and edge frames. Valid source clips do not guarantee a valid combined export. For ordinary distribution use H.264/yuv420p, AAC when audio exists, and faststart unless requirements differ. Record checks actually performed and limitations.
+
+## Layered production contract
+
+Read [scene-planning.md](scene-planning.md) and [layered-motion.md](layered-motion.md) before generating assets. Preserve a fixed or locally deformable plate separately from food, fluid, tools and gestures. Combine held pose substitutions with short transforms; do not give every element continuous motion. Use the preview/reuse stages in [reuse-and-previews.md](reuse-and-previews.md). The user-facing lesson follows the completed comic payoff as direct address to the audience.
