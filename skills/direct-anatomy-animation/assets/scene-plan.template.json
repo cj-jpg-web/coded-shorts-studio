@@ -1,0 +1,19 @@
+{
+  "skill_revision": "record the revision actually read",
+  "readiness": {"status": "planning", "proof_evidence": null, "missing": ["approved separated artwork", "action/contact proof"]},
+  "canvas": {"width": 1080, "height": 1920, "fps": 30},
+  "assets": [
+    {"id": "anatomy", "motion": "fixed", "source": null, "baked_moving_parts": []},
+    {"id": "cavity", "motion": "mask", "source": null, "parent": "anatomy"},
+    {"id": "food", "motion": "content", "source": null, "mask": "cavity", "containment": {"method": "bounded authored trajectories", "margin": 12}},
+    {"id": "tool", "motion": "rigid", "source": null, "pivot": [0, 0], "reveals_background": true, "backplate": "anatomy"},
+    {"id": "arm", "motion": "pose", "source": null, "pivot": [0, 0], "poses": ["rest", "grip", "release"]}
+  ],
+  "scenes": [{"id": "action-proof", "beats": [
+    {"start": 0, "end": 1, "action": "Hold the resting pose", "moving": [], "state_after": "Anatomy remains anchored"},
+    {"start": 1, "end": 3, "action": "Swap arm pose and grip tool; move contents independently", "moving": ["arm", "tool", "food"], "state_after": "Food rearranged; wall intact", "contacts": [{"a": "arm", "b": "tool", "mode": "grip", "anchors": ["wrist", "handle"]}]},
+    {"start": 3, "end": 4, "action": "Release and hold", "moving": ["arm"], "state_after": "Arm rests; contents settle", "contacts": [{"a": "arm", "b": "tool", "mode": "release"}]}
+  ]}],
+  "lesson": {"mode": "direct_to_viewer", "sources": []},
+  "previews": ["actual separated-art board", "fixed-camera motion proof", "low-resolution animatic", "final export"]
+}
