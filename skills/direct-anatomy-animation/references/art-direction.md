@@ -18,7 +18,7 @@ Use connected paths, shared anchors, or a common deformation field at structural
 
 Create local value/hue hierarchy. Recorded reference combinations include warm skin against pale blue, cream walls around burgundy cavities, white eyes/dark pupils, and selective yellow/red/green/blue accents. Muted colors can work; universal saturation is not a cure.
 
-Avoid undifferentiated peach/beige/pink fields. Give focal tissue, background tissue, prop, and contents distinguishable roles. Use controlled thin dark outlines, selective highlights, modest shading, and subject-specific folds/textures. Avoid indiscriminate gloss, glow, blur, gradients, and repeated procedural marks.
+Avoid undifferentiated peach/beige/pink fields. Give focal tissue, background tissue, prop, and contents distinguishable roles. Use coherent black outlines with weight scaled to the subject, selective highlights, modest shading, and subject-specific folds/textures. Avoid indiscriminate gloss, glow, blur, gradients, and repeated procedural marks.
 
 Give characters identity through eyelid weight, eye spacing, brow shape, jaw/mouth silhouettes, posture, and temperament. Maintain a coherent visual family without stamping one face onto every organ.
 
