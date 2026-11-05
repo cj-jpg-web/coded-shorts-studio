@@ -1,0 +1,132 @@
+{
+  "schema_version": 2,
+  "stage": "planning",
+  "brief": {
+    "story": "Fictional courier discovers a delivery mistake",
+    "factual": false,
+    "scope": "planning only",
+    "language": "English",
+    "screen_text": "captions only",
+    "timing_status": "provisional"
+  },
+  "art_contract": {
+    "characters": "Design expressive outlined courier for this story",
+    "outlines": "Variable plum character ink",
+    "environments": "Painted museum foyer with specific exhibits and foreground layers",
+    "lighting": "Cool interior with warm doorway separation",
+    "identity_checks": [
+      "Close-up",
+      "Full body",
+      "Contact pose",
+      "Environment"
+    ]
+  },
+  "reference_studies": [],
+  "claim_sources": [],
+  "risks": [
+    "Receipt grip and attention shift require a representative test"
+  ],
+  "beats": [
+    {
+      "id": "discovery",
+      "start": 0,
+      "end": 4,
+      "narration": "Then he checked the receipt.",
+      "viewer_question": "Is this the right museum?",
+      "visual_claim": "Receipt destination differs from the exhibit behind him",
+      "representation": "Prop close-up followed by character recognition",
+      "information_change": "Confidence becomes doubt",
+      "setting": "Museum foyer",
+      "action": {
+        "anticipation": "Eyes move to jacket pocket",
+        "execution": "Reach and lift receipt",
+        "contact": "Pinch paper between fingers",
+        "follow_through": "Paper settles after lift",
+        "reaction": "Eyes widen; shoulder tension increases",
+        "recovery": "Hold doubt while looking at exhibit"
+      },
+      "contacts": [
+        {
+          "actor": "courier",
+          "effector": "right hand",
+          "target": "receipt",
+          "space": "hand local after grasp",
+          "owner": "courier hand after visible transfer",
+          "anchor": "thumb/index pinch",
+          "phases": "approach, grasp, hold"
+        }
+      ],
+      "camera": {
+        "subject": "receipt then face",
+        "framing": "Over shoulder into medium close-up",
+        "path": "Short deliberate push",
+        "target": "Destination pictogram then eyes",
+        "hazards": [
+          "Paper must not obscure facial recognition"
+        ]
+      },
+      "transition": {
+        "type": "look-motivated cut",
+        "correspondence": "Gaze points toward exhibit",
+        "continuity_checks": [
+          "Receipt ownership",
+          "Doubt persists"
+        ]
+      },
+      "cue_words": [
+        "checked",
+        "receipt"
+      ],
+      "effects": [
+        "Paper rustle follows lift"
+      ],
+      "actors": [
+        {
+          "id": "courier",
+          "objective": "Confirm delivery destination",
+          "start_state": "confident",
+          "end_state": "doubtful",
+          "transition_reason": "Sees mismatched destination",
+          "gaze": "Receipt then exhibit",
+          "body": "Torso straightens, shoulders tighten",
+          "limbs": "Stable planted feet; elbow bends toward receipt without wrist flip",
+          "emotion_keys": [
+            {
+              "at": 0,
+              "state": "confident",
+              "intensity": 0.6
+            },
+            {
+              "at": 2,
+              "state": "doubtful",
+              "intensity": 0.8
+            },
+            {
+              "at": 4,
+              "state": "doubtful",
+              "intensity": 0.55
+            }
+          ]
+        }
+      ],
+      "artwork": [
+        "Courier expressions and pinch-hand drawings",
+        "Receipt pictogram",
+        "Museum foyer/exhibit"
+      ],
+      "implementation": {
+        "method": "Proposed layered illustrated rig with explicit paper anchor",
+        "status": "proposed",
+        "dependencies": [
+          "Artwork approval",
+          "Narration timings"
+        ],
+        "test": "Grasp, lift, recognition and sustained doubt"
+      },
+      "risks": [
+        "Disconnected grip",
+        "Expression reset after reaction"
+      ]
+    }
+  ]
+}

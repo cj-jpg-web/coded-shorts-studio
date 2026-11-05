@@ -1,0 +1,702 @@
+{
+  "schema_version": 1,
+  "purpose": "Reference media lookup and evidence boundaries for story-specific craftsmanship; not a footage distribution bundle",
+  "creator_discovery_url": "https://www.youtube.com/@ricksclips3000/shorts",
+  "creator_discovery_status": "creator channel located in prior discovery; recheck current availability and verify each exact source video before claiming public access",
+  "rights": "Third-party footage is not included, relicensed, or granted redistribution rights by this catalog. Use official playback or lawfully supplied local media. Do not extract reference artwork into final deliverables.",
+  "access_policy": "Use a user-supplied local reference directory, or locate the exact creator video through the included discovery links and verify it. Public skill access does not include third-party video files.",
+  "coverage_summary": {
+    "uploaded_files_in_study": 14,
+    "distinct_files": 13,
+    "exact_duplicate_files": 1,
+    "prior_package_contact_sheets": 20,
+    "prior_package_coverage": "partial sequence sheets, not 20 watched complete videos"
+  },
+  "references": [
+    {
+      "id": "pirate-cannonballs",
+      "title": "Levels of Pirate Cannonballs",
+      "media": {
+        "local_filename": "Levels of Pirate Cannonballs - Copy(1).mp4",
+        "sha256": "4c54ba2d2fef811ec97f9ec05a5131cef044b1e231b09444bfade01728427919",
+        "duration_seconds": 63.553016,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "public_video_url": null,
+        "public_url_status": "exact source video not verified against a primary page; locate by title and verify before using",
+        "media_included_in_public_skill": false,
+        "official_search_url": "https://www.youtube.com/results?search_query=Ricks%20Clips%20Levels%20of%20Pirate%20Cannonballs",
+        "search_url_status": "title/creator lookup only; verify exact result and inspect footage"
+      },
+      "study": {
+        "provenance": "November 2026 supplied-file study; catalog consolidates the recorded observations",
+        "coverage": "chronological sparse frame samples, approximately one sample per two seconds; not full normal-speed audiovisual playback",
+        "evidence_supports": [
+          "composition",
+          "representation changes",
+          "visible pose and object relationships"
+        ],
+        "evidence_does_not_establish": [
+          "exact easing",
+          "frame-exact impact timing",
+          "audio quality",
+          "historical or scientific truth",
+          "source implementation"
+        ],
+        "techniques": [
+          "physical demonstrations",
+          "scale changes",
+          "impact consequence",
+          "changing viewpoint around props"
+        ],
+        "confidence": "observed in prior sampled sequence study; independently reinspect relevant footage for a new production"
+      },
+      "suggested_inspection": {
+        "range": "full supplied clip for context, then the relevant action at normal speed and frame by frame",
+        "focus": [
+          "physical demonstrations",
+          "scale changes",
+          "impact consequence",
+          "changing viewpoint around props"
+        ]
+      }
+    },
+    {
+      "id": "winning-tickets",
+      "title": "He Could Spot Winning Tickets Just by Looking",
+      "media": {
+        "local_filename": "He Could Spot Winning Tickets Just by Looking.mp4",
+        "sha256": "12b030222a8db56736a55239ba556234651fb85b260e383ce129674c1c264f66",
+        "duration_seconds": 63.320816,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "public_video_url": null,
+        "public_url_status": "exact source video not verified against a primary page; locate by title and verify before using",
+        "media_included_in_public_skill": false,
+        "official_search_url": "https://www.youtube.com/results?search_query=Ricks%20Clips%20He%20Could%20Spot%20Winning%20Tickets%20Just%20by%20Looking",
+        "search_url_status": "title/creator lookup only; verify exact result and inspect footage"
+      },
+      "study": {
+        "provenance": "November 2026 supplied-file study; catalog consolidates the recorded observations",
+        "coverage": "chronological sparse frame samples, approximately one sample per two seconds; not full normal-speed audiovisual playback",
+        "evidence_supports": [
+          "composition",
+          "representation changes",
+          "visible pose and object relationships"
+        ],
+        "evidence_does_not_establish": [
+          "exact easing",
+          "frame-exact impact timing",
+          "audio quality",
+          "historical or scientific truth",
+          "source implementation"
+        ],
+        "techniques": [
+          "prop becomes explanatory graphic",
+          "progressive selective highlighting",
+          "discovery staged through evidence"
+        ],
+        "confidence": "observed in prior sampled sequence study; independently reinspect relevant footage for a new production",
+        "closer_window": {
+          "approx_start_seconds": 32,
+          "approx_end_seconds": 37,
+          "inspection_method": "four-frame-per-second contact sheet",
+          "timing_precision": "approximate sequence bounds, not frame-exact action measurements"
+        }
+      },
+      "suggested_inspection": {
+        "range": "full supplied clip for context, then the relevant action at normal speed and frame by frame",
+        "focus": [
+          "prop becomes explanatory graphic",
+          "progressive selective highlighting",
+          "discovery staged through evidence"
+        ]
+      }
+    },
+    {
+      "id": "mirror-horse-race",
+      "title": "How a Mirror Rigged a Horse Race",
+      "media": {
+        "local_filename": "How a Mirror Rigged a Horse Race(1).mp4",
+        "sha256": "ceb71b681196b0dc9ece5c5f6d6585e37d16bd96bfd465f0f3a04af751618645",
+        "duration_seconds": 64.133515,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "public_video_url": null,
+        "public_url_status": "exact source video not verified against a primary page; locate by title and verify before using",
+        "media_included_in_public_skill": false,
+        "official_search_url": "https://www.youtube.com/results?search_query=Ricks%20Clips%20How%20a%20Mirror%20Rigged%20a%20Horse%20Race",
+        "search_url_status": "title/creator lookup only; verify exact result and inspect footage"
+      },
+      "study": {
+        "provenance": "November 2026 supplied-file study; catalog consolidates the recorded observations",
+        "coverage": "chronological sparse frame samples, approximately one sample per two seconds; not full normal-speed audiovisual playback",
+        "evidence_supports": [
+          "composition",
+          "representation changes",
+          "visible pose and object relationships"
+        ],
+        "evidence_does_not_establish": [
+          "exact easing",
+          "frame-exact impact timing",
+          "audio quality",
+          "historical or scientific truth",
+          "source implementation"
+        ],
+        "techniques": [
+          "optical framing",
+          "spatial cause and consequence",
+          "spectator-to-event-to-betting scene connection"
+        ],
+        "confidence": "observed in prior sampled sequence study; independently reinspect relevant footage for a new production"
+      },
+      "suggested_inspection": {
+        "range": "full supplied clip for context, then the relevant action at normal speed and frame by frame",
+        "focus": [
+          "optical framing",
+          "spatial cause and consequence",
+          "spectator-to-event-to-betting scene connection"
+        ]
+      }
+    },
+    {
+      "id": "grave-bell",
+      "title": "What the Grave Bell Really Meant",
+      "media": {
+        "local_filename": "What the Grave Bell Really Meant - Copy(1).mp4",
+        "sha256": "63028cd0c72640ecab9d8c08e34eb508b20452c1c54ed40eba6e2c982f6d9567",
+        "duration_seconds": 59.559184,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "public_video_url": null,
+        "public_url_status": "exact source video not verified against a primary page; locate by title and verify before using",
+        "media_included_in_public_skill": false,
+        "duplicate_aliases": [
+          {
+            "local_filename": "What the Grave Bell Really Meant(1).mp4",
+            "relationship": "byte-identical SHA-256; do not count as a second study"
+          }
+        ],
+        "official_search_url": "https://www.youtube.com/results?search_query=Ricks%20Clips%20What%20the%20Grave%20Bell%20Really%20Meant",
+        "search_url_status": "title/creator lookup only; verify exact result and inspect footage"
+      },
+      "study": {
+        "provenance": "November 2026 supplied-file study; catalog consolidates the recorded observations",
+        "coverage": "chronological sparse frame samples, approximately one sample per two seconds; not full normal-speed audiovisual playback",
+        "evidence_supports": [
+          "composition",
+          "representation changes",
+          "visible pose and object relationships"
+        ],
+        "evidence_does_not_establish": [
+          "exact easing",
+          "frame-exact impact timing",
+          "audio quality",
+          "historical or scientific truth",
+          "source implementation"
+        ],
+        "techniques": [
+          "cutaway geography",
+          "persistent string endpoints",
+          "camera follows meaningful physical connection"
+        ],
+        "confidence": "observed in prior sampled sequence study; independently reinspect relevant footage for a new production",
+        "closer_window": {
+          "approx_start_seconds": 0,
+          "approx_end_seconds": 7,
+          "inspection_method": "four-frame-per-second contact sheet",
+          "timing_precision": "approximate sequence bounds, not frame-exact action measurements"
+        }
+      },
+      "suggested_inspection": {
+        "range": "full supplied clip for context, then the relevant action at normal speed and frame by frame",
+        "focus": [
+          "cutaway geography",
+          "persistent string endpoints",
+          "camera follows meaningful physical connection"
+        ]
+      }
+    },
+    {
+      "id": "town-button",
+      "title": "The Town Built Around a Button",
+      "media": {
+        "local_filename": "The Town Built Around a Button(1).mp4",
+        "sha256": "45253d9b28a1a43992db051d083d77f4b2f0f26db426991d073d37ffbd96de02",
+        "duration_seconds": 65.573152,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "public_video_url": null,
+        "public_url_status": "exact source video not verified against a primary page; locate by title and verify before using",
+        "media_included_in_public_skill": false,
+        "official_search_url": "https://www.youtube.com/results?search_query=Ricks%20Clips%20The%20Town%20Built%20Around%20a%20Button",
+        "search_url_status": "title/creator lookup only; verify exact result and inspect footage"
+      },
+      "study": {
+        "provenance": "November 2026 supplied-file study; catalog consolidates the recorded observations",
+        "coverage": "chronological sparse frame samples, approximately one sample per two seconds; not full normal-speed audiovisual playback",
+        "evidence_supports": [
+          "composition",
+          "representation changes",
+          "visible pose and object relationships"
+        ],
+        "evidence_does_not_establish": [
+          "exact easing",
+          "frame-exact impact timing",
+          "audio quality",
+          "historical or scientific truth",
+          "source implementation"
+        ],
+        "techniques": [
+          "same prop at different scales",
+          "crowd consequence",
+          "environment states",
+          "day and night distinction"
+        ],
+        "confidence": "observed in prior sampled sequence study; independently reinspect relevant footage for a new production"
+      },
+      "suggested_inspection": {
+        "range": "full supplied clip for context, then the relevant action at normal speed and frame by frame",
+        "focus": [
+          "same prop at different scales",
+          "crowd consequence",
+          "environment states",
+          "day and night distinction"
+        ]
+      }
+    },
+    {
+      "id": "memory-price",
+      "title": "Every Memory Has a Price",
+      "media": {
+        "local_filename": "Every Memory Has a Price.mp4",
+        "sha256": "252bb381400e3828c71e02a5fbe167036dfd78fe43eb9d3553a3236fbf4293a0",
+        "duration_seconds": 77.856508,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "public_video_url": null,
+        "public_url_status": "exact source video not verified against a primary page; locate by title and verify before using",
+        "media_included_in_public_skill": false,
+        "official_search_url": "https://www.youtube.com/results?search_query=Ricks%20Clips%20Every%20Memory%20Has%20a%20Price",
+        "search_url_status": "title/creator lookup only; verify exact result and inspect footage"
+      },
+      "study": {
+        "provenance": "November 2026 supplied-file study; catalog consolidates the recorded observations",
+        "coverage": "chronological sparse frame samples, approximately one sample per two seconds; not full normal-speed audiovisual playback",
+        "evidence_supports": [
+          "composition",
+          "representation changes",
+          "visible pose and object relationships"
+        ],
+        "evidence_does_not_establish": [
+          "exact easing",
+          "frame-exact impact timing",
+          "audio quality",
+          "historical or scientific truth",
+          "source implementation"
+        ],
+        "techniques": [
+          "personal prop recurrence",
+          "emotional consequence",
+          "color separates transaction and loss"
+        ],
+        "confidence": "observed in prior sampled sequence study; independently reinspect relevant footage for a new production",
+        "closer_window": {
+          "approx_start_seconds": 69,
+          "approx_end_seconds": 77,
+          "inspection_method": "four-frame-per-second contact sheet",
+          "timing_precision": "approximate sequence bounds, not frame-exact action measurements"
+        },
+        "limitations": [
+          "Overview sheet covered approximately 0\u201372 seconds; separate dense samples cover approximately 69\u201377 seconds. Do not claim complete normal-speed viewing or a verified complete source narrative."
+        ]
+      },
+      "suggested_inspection": {
+        "range": "full supplied clip for context, then the relevant action at normal speed and frame by frame",
+        "focus": [
+          "personal prop recurrence",
+          "emotional consequence",
+          "color separates transaction and loss"
+        ]
+      }
+    },
+    {
+      "id": "japan-job",
+      "title": "The Job Nobody Wants in Japan",
+      "media": {
+        "local_filename": "The Job Nobody Wants in Japan(1).mp4",
+        "sha256": "71f0efbd694521223bbc167248ad8c0cdfc91bf69e6fdcea259e3dd03b6dad09",
+        "duration_seconds": 60.557642,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "public_video_url": null,
+        "public_url_status": "exact source video not verified against a primary page; locate by title and verify before using",
+        "media_included_in_public_skill": false,
+        "official_search_url": "https://www.youtube.com/results?search_query=Ricks%20Clips%20The%20Job%20Nobody%20Wants%20in%20Japan",
+        "search_url_status": "title/creator lookup only; verify exact result and inspect footage"
+      },
+      "study": {
+        "provenance": "November 2026 supplied-file study; catalog consolidates the recorded observations",
+        "coverage": "chronological sparse frame samples, approximately one sample per two seconds; not full normal-speed audiovisual playback",
+        "evidence_supports": [
+          "composition",
+          "representation changes",
+          "visible pose and object relationships"
+        ],
+        "evidence_does_not_establish": [
+          "exact easing",
+          "frame-exact impact timing",
+          "audio quality",
+          "historical or scientific truth",
+          "source implementation"
+        ],
+        "techniques": [
+          "room state changes",
+          "empty inbox and cleared desk as evidence",
+          "setting supports story progression"
+        ],
+        "confidence": "observed in prior sampled sequence study; independently reinspect relevant footage for a new production"
+      },
+      "suggested_inspection": {
+        "range": "full supplied clip for context, then the relevant action at normal speed and frame by frame",
+        "focus": [
+          "room state changes",
+          "empty inbox and cleared desk as evidence",
+          "setting supports story progression"
+        ]
+      }
+    },
+    {
+      "id": "pink-prison",
+      "title": "The Pink Prison Cell Experiment",
+      "media": {
+        "local_filename": "The Pink Prison Cell Experiment(1).mp4",
+        "sha256": "bd321a2e63334a50c007816884bd54085120ec674fd4820420f8316316ef32a7",
+        "duration_seconds": 65.294512,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "public_video_url": null,
+        "public_url_status": "exact source video not verified against a primary page; locate by title and verify before using",
+        "media_included_in_public_skill": false,
+        "official_search_url": "https://www.youtube.com/results?search_query=Ricks%20Clips%20The%20Pink%20Prison%20Cell%20Experiment",
+        "search_url_status": "title/creator lookup only; verify exact result and inspect footage"
+      },
+      "study": {
+        "provenance": "November 2026 supplied-file study; catalog consolidates the recorded observations",
+        "coverage": "chronological sparse frame samples, approximately one sample per two seconds; not full normal-speed audiovisual playback",
+        "evidence_supports": [
+          "composition",
+          "representation changes",
+          "visible pose and object relationships"
+        ],
+        "evidence_does_not_establish": [
+          "exact easing",
+          "frame-exact impact timing",
+          "audio quality",
+          "historical or scientific truth",
+          "source implementation"
+        ],
+        "techniques": [
+          "physical testing",
+          "room-to-country scale expansion",
+          "delivery exterior",
+          "visible spread of an idea"
+        ],
+        "confidence": "observed in prior sampled sequence study; independently reinspect relevant footage for a new production",
+        "closer_window": {
+          "approx_start_seconds": 38,
+          "approx_end_seconds": 43,
+          "inspection_method": "four-frame-per-second contact sheet",
+          "timing_precision": "approximate sequence bounds, not frame-exact action measurements"
+        }
+      },
+      "suggested_inspection": {
+        "range": "full supplied clip for context, then the relevant action at normal speed and frame by frame",
+        "focus": [
+          "physical testing",
+          "room-to-country scale expansion",
+          "delivery exterior",
+          "visible spread of an idea"
+        ]
+      }
+    },
+    {
+      "id": "storm-oil",
+      "title": "Why Sailors Carried Storm Oil",
+      "media": {
+        "local_filename": "Why Sailors Carried Storm Oil(1).mp4",
+        "sha256": "914de6dcd2ea287ccc1b76c72ac8044ed7f5249dfa2339afac87599948d3fe0e",
+        "duration_seconds": 64.621134,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "public_video_url": null,
+        "public_url_status": "exact source video not verified against a primary page; locate by title and verify before using",
+        "media_included_in_public_skill": false,
+        "official_search_url": "https://www.youtube.com/results?search_query=Ricks%20Clips%20Why%20Sailors%20Carried%20Storm%20Oil",
+        "search_url_status": "title/creator lookup only; verify exact result and inspect footage"
+      },
+      "study": {
+        "provenance": "November 2026 supplied-file study; catalog consolidates the recorded observations",
+        "coverage": "chronological sparse frame samples, approximately one sample per two seconds; not full normal-speed audiovisual playback",
+        "evidence_supports": [
+          "composition",
+          "representation changes",
+          "visible pose and object relationships"
+        ],
+        "evidence_does_not_establish": [
+          "exact easing",
+          "frame-exact impact timing",
+          "audio quality",
+          "historical or scientific truth",
+          "source implementation"
+        ],
+        "techniques": [
+          "small physical analogy",
+          "prop presentation",
+          "overhead surface view",
+          "return to large-scale consequence"
+        ],
+        "confidence": "observed in prior sampled sequence study; independently reinspect relevant footage for a new production",
+        "closer_window": {
+          "approx_start_seconds": 44,
+          "approx_end_seconds": 51,
+          "inspection_method": "four-frame-per-second contact sheet",
+          "timing_precision": "approximate sequence bounds, not frame-exact action measurements"
+        }
+      },
+      "suggested_inspection": {
+        "range": "full supplied clip for context, then the relevant action at normal speed and frame by frame",
+        "focus": [
+          "small physical analogy",
+          "prop presentation",
+          "overhead surface view",
+          "return to large-scale consequence"
+        ]
+      }
+    },
+    {
+      "id": "spear-shield",
+      "title": "An Unstoppable Spear vs an Unbreakable Shield",
+      "media": {
+        "local_filename": "An Unstoppable Spear vs an Unbreakable Shield(1).mp4",
+        "sha256": "1d6121ed644e6422e1f1f9994900f9eb9008ce37aabc02a1b65c0e50476ff565",
+        "duration_seconds": 45.069932,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "public_video_url": null,
+        "public_url_status": "exact source video not verified against a primary page; locate by title and verify before using",
+        "media_included_in_public_skill": false,
+        "official_search_url": "https://www.youtube.com/results?search_query=Ricks%20Clips%20An%20Unstoppable%20Spear%20vs%20an%20Unbreakable%20Shield",
+        "search_url_status": "title/creator lookup only; verify exact result and inspect footage"
+      },
+      "study": {
+        "provenance": "November 2026 supplied-file study; catalog consolidates the recorded observations",
+        "coverage": "chronological sparse frame samples, approximately one sample per two seconds; not full normal-speed audiovisual playback",
+        "evidence_supports": [
+          "composition",
+          "representation changes",
+          "visible pose and object relationships"
+        ],
+        "evidence_does_not_establish": [
+          "exact easing",
+          "frame-exact impact timing",
+          "audio quality",
+          "historical or scientific truth",
+          "source implementation"
+        ],
+        "techniques": [
+          "anticipation and contact",
+          "local impact effects",
+          "distinct demonstrations",
+          "readable aftermath"
+        ],
+        "confidence": "observed in prior sampled sequence study; independently reinspect relevant footage for a new production",
+        "closer_window": {
+          "approx_start_seconds": 1,
+          "approx_end_seconds": 5,
+          "inspection_method": "four-frame-per-second contact sheet",
+          "timing_precision": "approximate sequence bounds, not frame-exact action measurements"
+        }
+      },
+      "suggested_inspection": {
+        "range": "full supplied clip for context, then the relevant action at normal speed and frame by frame",
+        "focus": [
+          "anticipation and contact",
+          "local impact effects",
+          "distinct demonstrations",
+          "readable aftermath"
+        ]
+      }
+    },
+    {
+      "id": "second-draw",
+      "title": "Why the Second Draw Always Wins",
+      "media": {
+        "local_filename": "Why the Second Draw Always Wins - Copy.mp4",
+        "sha256": "921dffb8243cd0c027d26cea8107a6b731c2ab6b617ecbba8fdb921d0ce1fcd9",
+        "duration_seconds": 56.12263,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "public_video_url": null,
+        "public_url_status": "exact source video not verified against a primary page; locate by title and verify before using",
+        "media_included_in_public_skill": false,
+        "official_search_url": "https://www.youtube.com/results?search_query=Ricks%20Clips%20Why%20the%20Second%20Draw%20Always%20Wins",
+        "search_url_status": "title/creator lookup only; verify exact result and inspect footage"
+      },
+      "study": {
+        "provenance": "November 2026 supplied-file study; catalog consolidates the recorded observations",
+        "coverage": "chronological sparse frame samples, approximately one sample per two seconds; not full normal-speed audiovisual playback",
+        "evidence_supports": [
+          "composition",
+          "representation changes",
+          "visible pose and object relationships"
+        ],
+        "evidence_does_not_establish": [
+          "exact easing",
+          "frame-exact impact timing",
+          "audio quality",
+          "historical or scientific truth",
+          "source implementation"
+        ],
+        "techniques": [
+          "gaze and hands",
+          "small meaningful head gestures",
+          "tension through holds",
+          "delayed response"
+        ],
+        "confidence": "observed in prior sampled sequence study; independently reinspect relevant footage for a new production",
+        "closer_window": {
+          "approx_start_seconds": 8,
+          "approx_end_seconds": 14,
+          "inspection_method": "four-frame-per-second contact sheet",
+          "timing_precision": "approximate sequence bounds, not frame-exact action measurements"
+        }
+      },
+      "suggested_inspection": {
+        "range": "full supplied clip for context, then the relevant action at normal speed and frame by frame",
+        "focus": [
+          "gaze and hands",
+          "small meaningful head gestures",
+          "tension through holds",
+          "delayed response"
+        ]
+      }
+    },
+    {
+      "id": "railroads",
+      "title": "Why Perfect Railroads Don't Work",
+      "media": {
+        "local_filename": "Why Perfect Railroads Don't Work(1).mp4",
+        "sha256": "47ef023d4ccafb1acfb0039933320873a7bcc1cab21d4e53130aeec7ea8bbe89",
+        "duration_seconds": 65.224853,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "public_video_url": null,
+        "public_url_status": "exact source video not verified against a primary page; locate by title and verify before using",
+        "media_included_in_public_skill": false,
+        "official_search_url": "https://www.youtube.com/results?search_query=Ricks%20Clips%20Why%20Perfect%20Railroads%20Don%27t%20Work",
+        "search_url_status": "title/creator lookup only; verify exact result and inspect footage"
+      },
+      "study": {
+        "provenance": "November 2026 supplied-file study; catalog consolidates the recorded observations",
+        "coverage": "chronological sparse frame samples, approximately one sample per two seconds; not full normal-speed audiovisual playback",
+        "evidence_supports": [
+          "composition",
+          "representation changes",
+          "visible pose and object relationships"
+        ],
+        "evidence_does_not_establish": [
+          "exact easing",
+          "frame-exact impact timing",
+          "audio quality",
+          "historical or scientific truth",
+          "source implementation"
+        ],
+        "techniques": [
+          "rail-level macro",
+          "paper scale comparison",
+          "detail before reaction",
+          "failure consequence"
+        ],
+        "confidence": "observed in prior sampled sequence study; independently reinspect relevant footage for a new production",
+        "closer_window": {
+          "approx_start_seconds": 42,
+          "approx_end_seconds": 49,
+          "inspection_method": "four-frame-per-second contact sheet",
+          "timing_precision": "approximate sequence bounds, not frame-exact action measurements"
+        }
+      },
+      "suggested_inspection": {
+        "range": "full supplied clip for context, then the relevant action at normal speed and frame by frame",
+        "focus": [
+          "rail-level macro",
+          "paper scale comparison",
+          "detail before reaction",
+          "failure consequence"
+        ]
+      }
+    },
+    {
+      "id": "painkillers",
+      "title": "How Painkillers Actually Work",
+      "media": {
+        "local_filename": "How Painkillers Actually Work(1).mp4",
+        "sha256": "42d9a0051e7065039f5cf7ffa0b59e412262ba9ec5abcfe30dbdd7407ba437e5",
+        "duration_seconds": 34.504853,
+        "width": 1080,
+        "height": 1920,
+        "fps": 30,
+        "public_video_url": null,
+        "public_url_status": "exact source video not verified against a primary page; locate by title and verify before using",
+        "media_included_in_public_skill": false,
+        "official_search_url": "https://www.youtube.com/results?search_query=Ricks%20Clips%20How%20Painkillers%20Actually%20Work",
+        "search_url_status": "title/creator lookup only; verify exact result and inspect footage"
+      },
+      "study": {
+        "provenance": "November 2026 supplied-file study; catalog consolidates the recorded observations",
+        "coverage": "chronological sparse frame samples, approximately one sample per two seconds; not full normal-speed audiovisual playback",
+        "evidence_supports": [
+          "composition",
+          "representation changes",
+          "visible pose and object relationships"
+        ],
+        "evidence_does_not_establish": [
+          "exact easing",
+          "frame-exact impact timing",
+          "audio quality",
+          "historical or scientific truth",
+          "source implementation"
+        ],
+        "techniques": [
+          "presenter-to-metaphor transition",
+          "spatial process explanation",
+          "consistent alarm relationship"
+        ],
+        "confidence": "observed in prior sampled sequence study; independently reinspect relevant footage for a new production",
+        "limitations": [
+          "Use visual process presentation only; story-first historical anecdotes remain the primary production genre. Verify medical facts independently before making factual claims."
+        ]
+      },
+      "suggested_inspection": {
+        "range": "full supplied clip for context, then the relevant action at normal speed and frame by frame",
+        "focus": [
+          "presenter-to-metaphor transition",
+          "spatial process explanation",
+          "consistent alarm relationship"
+        ]
+      }
+    }
+  ]
+}

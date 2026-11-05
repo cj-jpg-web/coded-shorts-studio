@@ -1,10 +1,10 @@
 # Coded Shorts Studio
 
-Our private workspace for code-built animated shorts, reusable 3D scenes, cameras, materials, and video outputs.
+Workspace for code-built animated shorts, reusable 3D scenes, cameras, materials, and video outputs.
 
 ## Portable anatomy-animation skill
 
-[Start here: use the production skill with any AI](ANATOMY_SKILL.md). The [skill](skills/direct-anatomy-animation/SKILL.md) captures art direction, acting/timing, reference observations, review gates, and the [learning ledger](skills/direct-anatomy-animation/references/learning-ledger.md). Read the latest revision before work and record reviewed experiments afterward. Private-repository access or a local copy is required.
+[Start here: use the production skill with any AI](ANATOMY_SKILL.md). The [skill](skills/direct-anatomy-animation/SKILL.md) captures art direction, acting/timing, reference observations, review gates, and the [learning ledger](skills/direct-anatomy-animation/references/learning-ledger.md). Read the latest revision before work and record reviewed experiments afterward. Use the repository or a local copy.
 
 ## Projects
 
@@ -45,11 +45,15 @@ For The Clone Button, run `node serve.mjs` from its project directory; the previ
 4. Review key frames, render, and check the final MP4.
 5. Commit source changes and save the final output here.
 
-No reference creator footage is included. Third-party dependencies retain their own licenses. This repository is private; do not change its visibility without the owner's instruction.
+No reference creator footage is included. Third-party dependencies retain their own licenses. The owner has authorized public access. Keep credentials, account-only links, and third-party study footage out of published files.
 
-## Output copies and masters
 
-The MP4s in `outputs/` are compact 1080p copies. Full-quality master deliverables remain available separately:
+## Crafted cartoon story workflow
 
-- [The Clone Button master](https://chatgpt.com/library?file_id=libfile_0fedb34c8d388191b522a6a4ff5235ea&account_id=personal)
-- [Held Together clean master](https://chatgpt.com/library?file_id=libfile_7b5fcb3dd7548191af2efcc5c5452cf8&account_id=personal)
+[Start here](STORY_SKILL.md) · [Production instructions](skills/direct-cartoon-story/SKILL.md) · [Reference catalog](skills/direct-cartoon-story/references/reference-catalog.json)
+
+The story workflow adds dedicated planning specialties, per-line visual direction, story-specific artwork, sustained emotion, joint/contact planning, evidence-bound audits, fault diagnosis, and final-video delivery. It prioritizes craftsmanship; existing anatomy project reuse guidance does not override this story brief.
+
+Reference videos are indexed by title, creator lookup, file identity, and observed techniques. Third-party video files and owner-only media links are not redistributed. Bring lawfully supplied local footage or verify official sources before claiming a reference comparison.
+
+The workflow has passed structural checks, regression tests, and a planning forward test. A future complete film must still demonstrate its artistic results.

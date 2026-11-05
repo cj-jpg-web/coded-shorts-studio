@@ -40,8 +40,4 @@ See `EXPERIMENT.md`. This production applies the user's latest art/label feedbac
 
 ## Saved video copies
 
-- [Voice-guide video](https://chatgpt.com/library?file_id=libfile_83ad7be727dc8191b6800bea094386da&account_id=personal)
-- [Silent clean video](https://chatgpt.com/library?file_id=libfile_458bd8c454d88191897e1dfe506b0c1b&account_id=personal)
-- [Voice script](https://chatgpt.com/library?file_id=libfile_5338a92c95d48191ae05d50b08979725&account_id=personal)
-
-These copies require the owner's ChatGPT access. The source can reproduce them independently when its documented dependencies are installed.
+Owner-only master copies are stored separately. Reproduce the video from this source using the documented dependencies; no private-account links are required by this repository.

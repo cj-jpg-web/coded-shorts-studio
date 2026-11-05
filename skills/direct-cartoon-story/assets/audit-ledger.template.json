@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "artifact": {
+    "path": "REPLACE_WITH_ACTUAL_EXPORT.mp4",
+    "version": "draft-1",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "stage": "final"
+  },
+  "reviews": [],
+  "issues": [],
+  "acceptance": {
+    "decision": "pending",
+    "lead": "REPLACE_WITH_ACTUAL_LEAD",
+    "independent_available": true,
+    "limitations": [
+      "Template only; no media has been reviewed"
+    ]
+  }
+}

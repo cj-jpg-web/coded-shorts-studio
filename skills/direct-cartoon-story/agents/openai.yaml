@@ -1,0 +1,8 @@
+interface:
+  display_name: "Cartoon Story Director"
+  short_description: "Craft stories with specialist planning and audits"
+  default_prompt: "Use $direct-cartoon-story to research, plan, direct, and internally audit a crafted cartoon story with expressive acting and reference-grounded visuals."
+  icon_small: "assets/icon.svg"
+  icon_large: "assets/icon.svg"
+policy:
+  allow_implicit_invocation: true
