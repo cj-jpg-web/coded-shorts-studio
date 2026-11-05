@@ -66,3 +66,12 @@ Deliver the final video with a concise result. Keep routine audit logs internal,
 Use assets/audit-ledger.template.json and run scripts/validate_audit.py. For current-version/current-hash records, a later judgment by the same reviewer supersedes that reviewer's earlier judgment for the same domain. It does not erase another reviewer's block. Preserve history and record the resolving judgment after repair. Require whole-final-export coverage for final domain acceptance; a local frame test cannot supply that scope. The named lead and independent reviewer must be distinct actual identities. Artifact identity and declared review methods are structurally checked, not independently proven by the script.
 
 Represent a specifically authorized exception as `acceptance.user_exception` containing `artifact_version`, `artifact_sha256`, `issue_ids`, and `evidence`. Bind it to the actual file and affected findings. A generic "okay" string is insufficient. Never fabricate user authorization. Exception acceptance remains visibly different from a clean accepted result, and it does not excuse unavailable core review.
+
+
+## Reference and scope enforcement
+
+For reference-grounded work set root `reference_policy` to `required` and select actual `reference_targets: [{id, domains}]`. Use `not_requested` with an empty target list only when the actual brief does not request reference comparison; do not flip the policy to bypass unavailable footage. Pending templates do not constitute approval.
+
+Record each review's `reference_evidence` as objects with `reference_id`, `source`, `range`, `methods`, `observations`, and `domains`. Observations are nonempty string arrays; methods identify actual viewing, not another report. Accepted reference-dependent domains require matching target evidence and appropriate inspection methods. Exact public URLs remain unavailable for some catalog entries; local source access is a real prerequisite, not something the validator supplies.
+
+Use findings as issue ID strings pointing to full issue records. Keep issue ranges as meaningful nonempty strings. A closure reviewer must have a current matching review, appropriate inspection method, and effective passing judgment in that domain. A partial-frame judgment cannot clear an earlier whole-export block. Superseded judgments do not establish current approval. Independent final review requires substantive current passing assessment and full audiovisual coverage, not a nonempty list of not-reviewed declarations.

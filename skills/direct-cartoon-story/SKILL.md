@@ -68,7 +68,7 @@ Read only relevant resources for a narrow planning or diagnosis request; load th
 2. Derive render state deterministically. Preserve sole anchoring, distance-driven gait, physical attachment, wheel travel, camera safety, and correct moving shadows from runtime-contracts.md.
 3. Apply stage-appropriate reviews to each meaningful artifact. Use an independent reviewer at major milestones and the assembled final. Give raw artifacts, the brief, and reference targets; do not feed the intended verdict.
 4. Calibrate rendering cost without replacing hero detail with placeholders. Compare patched boundaries and whole-sequence meaning after repairs. Optimization must not silently reduce the creative target.
-5. Keep a version-bound audit ledger using assets/audit-ledger.template.json. An agent's reassuring prose is not a pass. Run `python scripts/validate_audit.py LEDGER.json` to check evidence structure, open blockers, and delivery prerequisites; perform human-like visual/auditory judgment separately.
+5. Keep a version-bound audit ledger using assets/audit-ledger.template.json. An agent's reassuring prose is not a pass. Keep reference_policy=required for this reference-grounded workflow, select reference_targets, and bind reference evidence to the reviewed domains. Run `python scripts/validate_audit.py LEDGER.json` to check evidence structure, open blockers, and delivery prerequisites; perform human-like visual/auditory judgment separately.
 
 ## 6. Complete final acceptance and delivery
 

@@ -15,5 +15,21 @@
     "limitations": [
       "Template only; no media has been reviewed"
     ]
-  }
+  },
+  "reference_policy": "required",
+  "reference_targets": [
+    {
+      "id": "pink-prison",
+      "domains": [
+        "direction",
+        "art"
+      ]
+    },
+    {
+      "id": "spear-shield",
+      "domains": [
+        "performance_contact"
+      ]
+    }
+  ]
 }

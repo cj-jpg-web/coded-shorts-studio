@@ -12,12 +12,12 @@ HASH = '1' * 64
 def review(reviewer='director', role='lead', independent=False):
     return dict(reviewer=reviewer, role=role, independent=independent,
                 artifact_version='v2', artifact_sha256=HASH,
-                coverage='entire_final_export', methods=['audiovisual_playback'],
+                coverage='entire_final_export', methods=['audiovisual_playback', 'slow_motion'],
                 reference_evidence=[], domain_results={d: 'pass' for d in audit.DOMAINS},
                 findings=[], limitations=[])
 
 def ledger():
-    return dict(schema_version=1, artifact=dict(path='film.mp4', version='v2', sha256=HASH, stage='final'),
+    return dict(schema_version=1, reference_policy='not_requested', reference_targets=[], artifact=dict(path='film.mp4', version='v2', sha256=HASH, stage='final'),
                 reviews=[review(), review('critic', 'reviewer', True)], issues=[],
                 acceptance=dict(decision='accepted', lead='director', independent_available=True, limitations=[]))
 
@@ -97,6 +97,67 @@ class Gates(unittest.TestCase):
             for key in path[:-1]: target = target[key]
             target[path[-1]] = value
             with self.subTest(path=path): self.assertTrue(plan.validate(q)[0])
+
+
+    def test_reference_requirements(self):
+        p = ledger(); p['reference_policy'] = 'required'; p['reference_targets'] = [{'id':'film', 'domains':['art']}]
+        self.assertTrue(audit.validate(p)[0])
+        record = dict(reference_id='film', source='reference.mp4', range='0–2s', methods=['frame_inspection'], observations=['Thick outlines'], domains=['art'])
+        p['reviews'][0]['reference_evidence'] = [record]
+        self.assertEqual(audit.validate(p)[0], [])
+        for key, value in [('observations', False), ('methods', ['source_review']), ('domains', [None]), ('range', [])]:
+            q = copy.deepcopy(p); q['reviews'][0]['reference_evidence'][0][key] = value
+            self.assertTrue(audit.validate(q)[0])
+        q = ledger(); del q['reference_policy']; self.assertTrue(audit.validate(q)[0])
+
+    def test_reference_evidence_requires_effective_domain_pass(self):
+        p = ledger(); p.update(reference_policy='required', reference_targets=[{'id':'film', 'domains':['art']}])
+        p['reviews'][0]['reference_evidence'] = [dict(reference_id='film', source='ref.mp4', range='0–2s', methods=['frame_inspection'], observations=['Outline'], domains=['art'])]
+        self.assertEqual(audit.validate(p)[0], [])
+        later = review(); later['domain_results'] = {'art':'not_reviewed'}; p['reviews'].append(later)
+        self.assertTrue(audit.validate(p)[0])
+        later['domain_results'] = {'art':'pass'}
+        self.assertTrue(audit.validate(p)[0])
+        later['reference_evidence'] = copy.deepcopy(p['reviews'][0]['reference_evidence'])
+        self.assertEqual(audit.validate(p)[0], [])
+
+    def test_independent_must_inspect_and_pass(self):
+        p = ledger(); p['reviews'][1].update(domain_results={'art':'not_reviewed'}, methods=['source_review'])
+        self.assertTrue(audit.validate(p)[0])
+        p = ledger(); later = review('critic', 'reviewer', True); later['domain_results'] = {d:'not_reviewed' for d in audit.DOMAINS}; p['reviews'].append(later)
+        self.assertTrue(audit.validate(p)[0])
+
+    def test_local_pass_cannot_clear_final_block(self):
+        p = ledger(); blocked = review('critic', 'reviewer', True); blocked['domain_results'] = {'art':'block'}
+        p['reviews'].append(blocked)
+        local = copy.deepcopy(blocked); local.update(coverage='one_frame', methods=['frame_inspection'], domain_results={'art':'pass'})
+        p['reviews'].append(local); self.assertTrue(audit.validate(p)[0])
+        final = copy.deepcopy(local); final['coverage'] = 'entire_final_export'; p['reviews'].append(final)
+        self.assertEqual(audit.validate(p)[0], [])
+
+    def test_findings_must_identify_issues(self):
+        for value in [[{'severity':'critical'}], ['unknown']]:
+            p = ledger(); p['reviews'][0]['findings'] = value
+            self.assertTrue(audit.validate(p)[0])
+        p = ledger(); p['issues'] = [issue()]; p['reviews'][0]['findings'] = ['grip']
+        self.assertEqual(audit.validate(p)[0], [])
+
+    def test_issue_closure_requires_review_and_range(self):
+        for field, value in [('reviewer','nonexistent'), ('method','muted_playback')]:
+            p = ledger(); p['issues'] = [issue()]; p['issues'][0]['verification'][field] = value
+            self.assertTrue(audit.validate(p)[0])
+        p = ledger(); p['issues'] = [issue()]; p['issues'][0]['range'] = []
+        self.assertTrue(audit.validate(p)[0])
+
+    def test_plan_requires_structured_sources_and_studies(self):
+        p = json.loads((ROOT/'assets/production-plan.template.json').read_text()); p['brief']['factual'] = True
+        p['claim_sources'] = [False]; self.assertTrue(plan.validate(p)[0])
+        p['claim_sources'] = [dict(claim='Date', source='archive', evidence='Page 2')]
+        p['reference_studies'] = [dict(reference_id='film', source='film.mp4', coverage='0–2s', method='frame_inspection', observations=['Outlines'], limitations=[])]
+        self.assertEqual(plan.validate(p)[0], [])
+        for key, value in [('method','invented'), ('observations',False), ('limitations',42)]:
+            q = copy.deepcopy(p); q['reference_studies'][0][key] = value
+            self.assertTrue(plan.validate(q)[0])
 
     def test_no_crashes_for_wrong_json_types(self):
         # Replace every individual field in otherwise valid documents with each

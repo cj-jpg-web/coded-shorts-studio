@@ -27,3 +27,8 @@ Define an observable pass and failure for each high-risk method. Use the user br
 ## Validate structure
 
 Run `python scripts/validate_plan.py PLAN.json`. Errors indicate malformed or incomplete required structure. Warnings identify things requiring director judgment, including repeated staging, emotion discontinuity, and timeline gaps. A clean result proves neither accurate research nor good art/animation. Add real evidence and independent review under audit-contract.md.
+
+
+## Structured research records
+
+Use claim_sources entries `{claim, source, evidence}` with nonempty strings. Use reference_studies entries `{reference_id, source, coverage, method, observations, limitations}`; observations are a nonempty string array, limitations a string array, and method one of audiovisual_playback, muted_playback, slow_motion, frame_inspection, sampled_frames. Enter the actual inspected scope and sources. These type checks cannot establish that facts are correct or media was really viewed.

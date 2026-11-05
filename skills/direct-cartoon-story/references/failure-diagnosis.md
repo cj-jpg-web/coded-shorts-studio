@@ -7,8 +7,8 @@ Use after a planning, artwork, motion, sequence, or final-export review identifi
 Record `id`, `artifact_path`, `artifact_hash_or_version`, `reviewer`, `review_mode`, `time_range_or_frames`, `observed_fault`, `expected_behavior`, `reference_evidence`, `severity`, `likely_cause`, `repair`, `affected_dependencies`, `verification_artifact`, `verification_result`, and `remaining_limits`.
 
 - Separate a directly observed fault from a suspected cause. Record missing reference access or incomplete review rather than inventing evidence.
-- Classify severity as `blocker` (breaks meaning, approved identity, crucial contact, factual support, or final integrity), `major` (materially weakens presentation/performance), or `minor` (local polish). Do not average a blocker away with a score.
-- Use `open`, `repairing`, `needs_verification`, `verified`, or `accepted_limitation`. Record who accepted a limitation and why; do not label an unresolved material issue verified.
+- Classify severity using audit-contract.md: `critical` (materially false/misleading content, missing required media, corrupt export, or an unusable story), `major` (a clear failure of the brief or reference target, including broken identity, crucial contact, or materially weak presentation/performance), `minor` (local polish), or `preference` (a defensible creative alternative within the brief). Critical and major issues block final acceptance; do not average either away with a score.
+- Use `open → diagnosed → repair_in_progress → awaiting_verification → closed`, or `blocked` with a reason. Close only after inspecting passing evidence from the repaired artifact. Record any user-authorized limitation separately in `acceptance.user_exception` under audit-contract.md; accepting a limitation does not close an unresolved issue or create a separate issue status.
 - Give independent reviewers the actual artifact and relevant reference, brief, and factual constraints. Do not supply a desired verdict or ask them to affirm the creator's diagnosis.
 
 ## Select the right repair level
@@ -35,12 +35,12 @@ Record `id`, `artifact_path`, `artifact_hash_or_version`, `reviewer`, `review_mo
 2. State one testable cause hypothesis and the expected visible improvement. Try the least disruptive correction that preserves the intended shot.
 3. Render or inspect the affected work at the quality required to judge it. Keep critical contact tests at the intended frame rate; inspect art at readable size.
 4. Verify the original fault, then check affected dependencies and neighboring transitions for regressions. Include audio/caption changes when timing moved.
-5. Ask an independent reviewer to recheck blockers and major changes when available. Consolidate disagreement against source evidence; the lead owns the decision.
+5. Ask an independent reviewer to recheck critical/major issues and major changes when available. Consolidate disagreement against source evidence; the lead owns the decision.
 6. If the same local correction fails twice, stop repeating it. Reassess the diagnosis and consider a different construction method, custom artwork, or revised staging that preserves the meaning. Do not silently lower the quality target.
 7. Close only with evidence from the corrected artifact. Keep untested techniques provisional. If available tools cannot support a necessary verification, record the gap and report it plainly instead of certifying a pass.
 
 ## Release decision
 
-Require the lead to inspect the complete assembled export after local fixes. Confirm the final file is the reviewed version and all story-critical intervals have coverage. Block release for open blockers or major faults. Route minor polish through judgment; endless arbitrary tweaking is not a substitute for a clear acceptance criterion. If an actual capability or access limitation prevents completion, preserve the work and disclose that limitation rather than calling an incomplete export final.
+Require the lead to inspect the complete assembled export after local fixes. Confirm the final file is the reviewed version and all story-critical intervals have coverage. Block release for unresolved critical or major faults unless the user explicitly accepts the specific artifact-bound limitation under audit-contract.md. Route minor polish through judgment; endless arbitrary tweaking is not a substitute for a clear acceptance criterion. If an actual capability or access limitation prevents completion, preserve the work and disclose that limitation rather than calling an incomplete export final.
 
 Record successful techniques and remaining failure modes in the learning evidence after review. Do not turn an untested suggestion or a single favorable planning result into a claimed rendering capability. Keep routine diagnosis and intermediate artifacts internal unless requested; deliver the final video with any material unresolved limitation stated succinctly.

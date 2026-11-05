@@ -60,7 +60,19 @@ def validate(p):
     elif not studies: warnings.append('reference_studies: no footage inspected; reference-dependent gates remain pending')
     else:
         for i, study in enumerate(studies):
-            need(study, ['reference_id', 'source', 'coverage', 'method', 'observations', 'limitations'], f'reference_studies[{i}]')
+            sw = f'reference_studies[{i}]'
+            if not need(study, ['reference_id', 'source', 'coverage', 'method', 'observations', 'limitations'], sw): continue
+            if study.get('method') not in ['audiovisual_playback', 'muted_playback', 'slow_motion', 'frame_inspection', 'sampled_frames']:
+                errors.append(f'{sw}.method: expected visual inspection method')
+            for key in ['observations', 'limitations']:
+                value = study.get(key)
+                if not isinstance(value, list) or (key == 'observations' and not value) or not all(filled(x) for x in value): errors.append(f'{sw}.{key}: expected string array; observations must be nonempty')
+    if isinstance(p.get('claim_sources'), list):
+        for i, claim in enumerate(p['claim_sources']):
+            cw = f'claim_sources[{i}]'
+            if not need(claim, ['claim', 'source', 'evidence'], cw): continue
+            for key in ['claim', 'source', 'evidence']:
+                if not filled(claim.get(key)): errors.append(f'{cw}.{key}: expected nonempty string')
     if isinstance(brief, dict) and brief.get('factual') and not p.get('claim_sources'):
         errors.append('claim_sources: factual story requires supported consequential claims')
     beats = p.get('beats')
